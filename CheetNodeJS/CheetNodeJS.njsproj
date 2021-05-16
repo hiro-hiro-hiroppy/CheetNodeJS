@@ -5,6 +5,8 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>CheetNodeJS</Name>
     <RootNamespace>CheetNodeJS</RootNamespace>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -32,9 +34,29 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="server.ts" />
+    <None Include="compilerconfig.json" />
+    <Content Include="compilerconfig.json.defaults">
+      <SubType>Content</SubType>
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </Content>
+    <Content Include="index.html">
+      <SubType>Code</SubType>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="Page\index2.html" />
+    <Content Include="Style\css\index.css" />
+    <Content Include="Style\css\index.min.css" />
+    <Content Include="Style\scss\index.scss" />
     <Content Include="tsconfig.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Page\" />
+    <Folder Include="Style\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Style\css\" />
+    <Folder Include="Style\scss\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
@@ -75,4 +97,11 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="..\packages\BuildWebCompiler.1.12.394\build\BuildWebCompiler.targets" Condition="Exists('..\packages\BuildWebCompiler.1.12.394\build\BuildWebCompiler.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\BuildWebCompiler.1.12.394\build\BuildWebCompiler.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BuildWebCompiler.1.12.394\build\BuildWebCompiler.targets'))" />
+  </Target>
 </Project>
