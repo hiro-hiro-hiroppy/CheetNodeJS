@@ -53,10 +53,58 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Page\" />
+    <Folder Include="Page\Ejs\" />
+    <Folder Include="Scripts\JS\" />
+    <Folder Include="Scripts\jQuery\" />
+    <Folder Include="Scripts\Test\" />
+    <Folder Include="Scripts\Node\" />
     <Folder Include="Style\" />
     <Folder Include="Scripts\" />
     <Folder Include="Style\css\" />
     <Folder Include="Style\scss\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\jQuery\AttributeJQ_保留.ts" />
+    <TypeScriptCompile Include="Scripts\jQuery\WrapJQ_保留.ts" />
+    <TypeScriptCompile Include="Scripts\jQuery\EffectJQ_保留.ts" />
+    <TypeScriptCompile Include="Scripts\jQuery\EventJQ_保留.ts" />
+    <TypeScriptCompile Include="Scripts\jQuery\FormJQ_保留.ts" />
+    <TypeScriptCompile Include="Scripts\jQuery\OffsetJQ_保留.ts" />
+    <TypeScriptCompile Include="Scripts\jQuery\CallbacksJQ_保留.ts" />
+    <TypeScriptCompile Include="Scripts\jQuery\DeferredJQ_保留.ts" />
+    <TypeScriptCompile Include="Scripts\jQuery\AjaxJQ_保留.ts" />
+    <TypeScriptCompile Include="Scripts\jQuery\UtilityJQ_保留.ts" />
+    <TypeScriptCompile Include="Scripts\JS\RegExpJS.ts" />
+    <TypeScriptCompile Include="Scripts\JS\OtherJS.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Scripts\JS\StringJS.ts" />
+    <TypeScriptCompile Include="Scripts\JS\WindowJS.ts" />
+    <TypeScriptCompile Include="Scripts\JS\ObjectJS.ts" />
+    <TypeScriptCompile Include="Scripts\JS\EventJS.ts" />
+    <TypeScriptCompile Include="Scripts\JS\HistoryJS_ほぼ終わり.ts" />
+    <TypeScriptCompile Include="Scripts\JS\FileJS.ts" />
+    <TypeScriptCompile Include="Scripts\JS\FetchJS.ts" />
+    <TypeScriptCompile Include="Scripts\JS\CanvasJS_終わり.ts" />
+    <TypeScriptCompile Include="Scripts\JS\DOMJS_少し残り.ts" />
+    <TypeScriptCompile Include="Scripts\JS\JsonJS_終わり.ts" />
+    <TypeScriptCompile Include="Scripts\JS\PromiseJS.ts" />
+    <TypeScriptCompile Include="Scripts\JS\DateJS_ほぼ終わり.ts" />
+    <TypeScriptCompile Include="Scripts\JS\FunctionJS.ts" />
+    <TypeScriptCompile Include="Scripts\JS\MathJS_ほぼ終わり.ts" />
+    <TypeScriptCompile Include="Scripts\JS\ArrayJS.ts" />
+    <TypeScriptCompile Include="Scripts\JS\NumberJS_終わり.ts" />
+    <TypeScriptCompile Include="Scripts\JS\ConsoleJS_終わり.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Scripts\Node\DBCommon.ts" />
+    <TypeScriptCompile Include="Scripts\Node\Cookie.ts" />
+    <TypeScriptCompile Include="Scripts\Node\SessionNode.ts" />
+    <TypeScriptCompile Include="Scripts\Node\MailNode.ts" />
+    <TypeScriptCompile Include="Scripts\Node\OSNode.ts" />
+    <TypeScriptCompile Include="Scripts\Node\ExcelNode.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
