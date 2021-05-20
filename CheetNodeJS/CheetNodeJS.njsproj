@@ -97,12 +97,18 @@
     <TypeScriptCompile Include="Scripts\JS\ConsoleJS_終わり.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="Scripts\Node\DBCommon.ts" />
-    <TypeScriptCompile Include="Scripts\Node\Cookie.ts" />
+    <TypeScriptCompile Include="Scripts\Node\ChatNode.ts" />
+    <TypeScriptCompile Include="Scripts\Node\AESNode.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Scripts\Node\DBCommonNode.ts" />
+    <TypeScriptCompile Include="Scripts\Node\CookieNode.ts" />
     <TypeScriptCompile Include="Scripts\Node\SessionNode.ts" />
     <TypeScriptCompile Include="Scripts\Node\MailNode.ts" />
-    <TypeScriptCompile Include="Scripts\Node\OSNode.ts" />
     <TypeScriptCompile Include="Scripts\Node\ExcelNode.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Scripts\Node\TypeNode.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
   </ItemGroup>
